@@ -1,0 +1,47 @@
+.introSection {
+  display: block;
+  text-align: center;
+  width: max-content;
+  margin: auto;
+  gap: 2em;
+}
+.foto {
+  margin: 2rem auto;
+}
+.subtitle {
+  background-color: #20b2aa;
+}
+
+@media screen and (min-width: 600px) {
+  .introSection {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "foto title"
+      "foto subtitle";
+    grid-template-columns: min-content max-content;
+  }
+  .foto {
+    grid-area: foto;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+  }
+  .title {
+    grid-area: title;
+    align-self: flex-end;
+  }
+  .subtitle {
+    align-self: start;
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+    background-color: #20b2aa;
+    padding: 1.25rem 3.25rem;
+  }
+}

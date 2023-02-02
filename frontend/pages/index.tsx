@@ -1,6 +1,6 @@
-import Header from "../components/header";
 import Head from "next/head";
 import React from "react";
+import Hello from "@/components/hello";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <title>Web developer portfolio</title>
         <meta name="title" content="Web Developer portfolio Website" />
       </Head>
-      <main></main>
+      <Hello />
     </>
   );
 }
