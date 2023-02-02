@@ -1,10 +1,14 @@
+import Skills from "@/components/skills";
 import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="block">
+    <div className="block max-w-[1100px] m-auto pt-5">
+      <h2 className="text-[#20b2aa] text-lg md:text-xl lg:text-xl uppercase font-bold tracking-wider">
+        About Me
+      </h2>
       <div>
-        <h3 className="bg-[#20b2aa] px-10 py-2 my-10 max-w-max">Who am I</h3>
+        <h3 className="bg-[#20b2aa] px-10 py-2 my-8 max-w-max">Who am I</h3>
         <p className="p-2 m-2 max-w-lg">
           I like programming and fixing apps. I am happy with clear and logical
           code structure. I pay attention to details and enjoy to plan and
@@ -68,7 +72,9 @@ const AboutMe = () => {
       </div>
       <div>
         <h3 className="bg-[#20b2aa] px-10 py-2 my-10 max-w-max">My skills</h3>
-        <div></div>
+        <div className="max-w-[1000px] mx-auto">
+          <Skills />
+        </div>
       </div>
     </div>
   );

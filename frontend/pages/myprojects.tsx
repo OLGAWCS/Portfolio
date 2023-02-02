@@ -2,8 +2,10 @@ import React from "react";
 
 const MyProgects = () => {
   return (
-    <div className="">
-      <h2 className="bg-[#20b2aa] px-10 py-2 max-w-max">My Progects</h2>
+    <div className="block max-w-[1100px] m-auto pt-5">
+      <h2 className="text-[#20b2aa] text-lg md:text-xl lg:text-xl uppercase font-bold tracking-wider">
+        My Progects
+      </h2>
     </div>
   );
 };

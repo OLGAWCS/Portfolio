@@ -12,7 +12,7 @@
   background-color: #20b2aa;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .introSection {
     display: grid;
     width: min-content;
@@ -27,7 +27,7 @@
     grid-area: foto;
     min-width: 250px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
   .title {
     grid-area: title;
@@ -42,6 +42,6 @@
     left: -1.5em;
     width: calc(100% + 1.5em);
     background-color: #20b2aa;
-    padding: 1.25rem 3.25rem;
+    padding: 1rem 3rem;
   }
 }

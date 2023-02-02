@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed w-full h-[60px] shadow-xl z-[100]">
+    <header className="w-full h-[60px] shadow-xl z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 ">
         <p className="text-[#20b2aa] text-lg md:text-xl lg:text-xl font-bold tracking-wider">
           {"<olgaDobrovolska>"}
