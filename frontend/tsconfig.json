@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/header.tsx", "components/layout.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/header.tsx", "components/layout.jsx", "components/PDFViewer.jsx"],
   "exclude": ["node_modules"]
 }

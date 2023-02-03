@@ -1,15 +1,19 @@
 import express from "express";
-
-import dotenv from "dotenv";
-dotenv.config();
-const EXPRESS_PORT = parseInt(process.env.EXPRESS_PORT ?? "5005", 10);
+import database from "./database";
 
 const app = express();
-
+app.use(express.json());
 app.get("/", (req, res) => {
-  res.send("Hello from Express!");
+  res.send("Hello there!");
 });
 
-app.listen(EXPRESS_PORT, () => {
-  console.log("Express listening on port", EXPRESS_PORT);
+app.listen(5050, () => {
+  console.log("Express listening on http://localhost:5050");
+  if (database.getConnection() == null) {
+    console.error("Database connection failed");
+    process.exit(1);
+  }
+  console.log(
+    "Database connected.\nExpress listening on http://localhost:5050"
+  );
 });
