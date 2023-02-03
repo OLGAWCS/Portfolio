@@ -56,7 +56,7 @@ const ContactMe = () => {
             onChange={(e) => setMessage(e.target.value)}
           />
           <button
-            className="px-5 py-1 mt-4 shadow-xl shadow-gray-400 rounded-2xl uppercase bg-gradient-to-r from-[#20b2aa] to-[#99ede8]"
+            className="px-5 py-1 w-fit mt-4 self-center shadow-xl shadow-gray-400 rounded-2xl uppercase bg-gradient-to-r from-[#20b2aa] to-[#99ede8]"
             type="submit"
           >
             Send message
