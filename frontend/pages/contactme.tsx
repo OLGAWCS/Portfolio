@@ -10,11 +10,20 @@ const ContactMe = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5050/contactme", {
-        name,
-        email,
-        message,
-      })
+      .post(
+        "http://localhost:5050/contactme",
+        {
+          name,
+          email,
+          message,
+        },
+        {
+          headers: {
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json",
+          },
+        }
+      )
       .then((res) => res.data);
   };
 

@@ -1,12 +1,12 @@
-const express = require("express");
+import express from "express";
 const contactHandlers = require("./contactHandlers");
 
 const contactRouter = express.Router();
 
 // Routes related to the whole collection
 
-contactRouter.get("/messages", contactHandlers.getAllMessages);
-contactRouter.post("/", contactHandlers.createMessage);
+
+contactRouter.post("/contactme", contactHandlers.createMessage);
 
 
 

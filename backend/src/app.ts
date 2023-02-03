@@ -17,8 +17,8 @@ app.get("/", (req, res) => {
   res.send("Hello there!");
 });
 
-app.use("/messages", contactRouter);
 
+app.use("/", contactRouter);
 app.listen(5050, () => {
   console.log("Express listening on http://localhost:5050");
   if (database.getConnection() == null) {
@@ -29,3 +29,4 @@ app.listen(5050, () => {
     "Database connected.\nExpress listening on http://localhost:5050"
   );
 });
+
